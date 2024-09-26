@@ -1,22 +1,24 @@
 package baithuchanh.bai07;
 import java.util.Scanner;
+public class TinhCVDThinhtron {
 
-	class DienTichChuViHT {
-	    public static double tinhDienTich(double r) {
-	        return r * r * 3.14;
-	    }
-	    public static double tinhChuVi(double r){
-	        return r * 2 * 3.14;
-	    }
-	    public static void main(String[] args) {
-	        double r;
-	        Scanner scanner = new Scanner(System.in);
-	        System.out.println("Nhập bán kính hình tròn: ");
-	        r = scanner.nextDouble();
-	        System.out.println("Diện tích hình tròn là: " + tinhDienTich(r));
-	        System.out.println("Chu vi hình tròn là: "+ tinhChuVi(r));
-	    }
+	public static void main(String[] args) {
+		
+		class TinhChuViDienTichHinhTron
+		{
+		    static Scanner sc = new Scanner(System.in);
+		    public static void main(String args[])
+		    {
+		        System.out.print("Nhap ban kinh duong tron: ");
+		        double radius = sc.nextDouble();
+		        double area = Math.PI * (radius * radius);
+		        System.out.println("Dien tich hinh tron la: " + area);
+
+		        double circumference= Math.PI * 2*radius;
+		        System.out.print( "Chu vi hinh trong la: "+circumference) ;
+		    }
+		}
+
 	}
-	    
-	
-	    
+
+}
