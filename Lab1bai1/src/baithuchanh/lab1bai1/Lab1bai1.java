@@ -8,7 +8,10 @@ public class Lab1bai1 {
 		String hoTen = scanner.nextLine();
 		System.out.print("Điểm TB: ");
 		double diemTB = scanner.nextDouble();
-
+		
+		System.out.println("------Thông tin điểm sinh viên-----");
+		System.out.printf("%s: %.1f điểm", hoTen,diemTB);
 	}
 
 }
+
